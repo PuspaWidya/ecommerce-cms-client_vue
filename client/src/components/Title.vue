@@ -1,7 +1,6 @@
 <template>
   <div class="title">
-    <h1>{{ msg }}</h1>
-    <h1>{{word}}</h1>
+    <h1>{{ pageTitle }}</h1>
     <h2> test 123</h2>
     <a> test 123123</a>
   </div>
@@ -10,9 +9,10 @@
 <script>
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String,
-    word: String
+  computed: {
+    pageTitle () {
+      return this.$store.state.pageTitle
+    }
   }
 }
 </script>
@@ -37,6 +37,6 @@ h2 {
   color: red;
 }
 h1 {
-  color:green;
+  color:#ad875d;
 }
 </style>

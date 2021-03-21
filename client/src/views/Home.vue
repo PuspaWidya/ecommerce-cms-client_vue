@@ -1,15 +1,14 @@
 <template>
   <div class="home">
-    <img alt="logo" src="../assets/logo.png">
     <img alt="banner" :src="banner" height="350px">
-    <HelloWorld msg="Welcome to Your Favorite App"
-    :word="msg1"></HelloWorld>
+    <Title msg="Welcome to Your Favorite App"
+    ></Title>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Title from '@/components/Title.vue'
 
 export default {
   name: 'Home',
@@ -20,7 +19,7 @@ export default {
     }
   },
   components: {
-    HelloWorld
+    Title
   }
 }
 </script>
