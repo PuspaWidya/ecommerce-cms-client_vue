@@ -1,8 +1,6 @@
 <template>
   <div class="title">
     <h1>{{ pageTitle }}</h1>
-    <h2> test 123</h2>
-    <a> test 123123</a>
   </div>
 </template>
 
