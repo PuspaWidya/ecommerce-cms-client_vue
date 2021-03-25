@@ -2,12 +2,10 @@
   <div class="products">
     <div class="container">
     <div class="row">
-    <h1>This is products page</h1>
     <CardProducts
     v-for="product in products"
     :key="product.id"
     :product="product"
-    @deleteProduct="deleteProduct"
     />
   </div>
   </div>
