@@ -50,7 +50,8 @@ export default new Vuex.Store({
     addProduct (context, payload) {
       newAxios({
         method: 'post',
-        url: 'http://localhost:3000/products/',
+        // url: 'http://localhost:3000/products/',
+        url:'https://e-com-client-customer-puspa.herokuapp.com/products/',
         headers: {
           access_token: localStorage.getItem('access_token')
         },
@@ -89,7 +90,8 @@ export default new Vuex.Store({
     editProduct (context, payload) {
       newAxios({
         method: 'put',
-        url: `http://localhost:3000/products/${payload.id}`,
+        // url: `http://localhost:3000/products/${payload.id}`,
+        url: `https://e-com-client-customer-puspa.herokuapp.com/products/${payload.id}`,
         headers: {
           access_token: localStorage.getItem('access_token')
         },
